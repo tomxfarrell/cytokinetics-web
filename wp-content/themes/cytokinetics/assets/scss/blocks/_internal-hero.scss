@@ -1,0 +1,39 @@
+
+  .internal-hero-block {
+  
+      position: relative;
+      // padding-bottom: 20vw;
+      &:after {
+        padding-top: 10vw;
+        display: block;
+        content: "";
+      }
+      .hero-image {
+        height: auto;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: fill;
+      }
+      
+    
+    .row-internal-hero {
+      // min-height: 580px;
+      align-items: center;
+      position: relative;
+
+      z-index: 1;
+      .col-hero-text {
+        // margin-bottom: 5em;
+        img {
+          max-width: 100%;
+          padding-top: 10%;
+          padding-left: 15%;
+          height: auto;
+          display: block;
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }

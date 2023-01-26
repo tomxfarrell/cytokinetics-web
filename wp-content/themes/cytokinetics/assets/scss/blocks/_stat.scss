@@ -1,0 +1,60 @@
+.stat-block {
+  margin: 80px 0;
+
+  .row-stat {
+    align-items: center;
+  }
+  .stat-col {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .stat-text-col { 
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid green;
+    .stat-text-box {
+      max-width: 315px;
+      // border: 1px solid blue;
+      align-self: flex-end;
+      padding: 0 20px;
+      &:not(:last-child) {
+        margin-bottom: 100px;
+      }
+    }
+  }
+  .stat-col-graphic {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:auto;
+    // width: 344px;
+  }
+  .stat-card {
+    background-color: $white;
+    border: 2px solid $lime;
+    border-radius: 10px;
+    box-shadow: 10px 16px 33px -13px rgba(0,0,0,0.2);
+    padding: 0 79px;
+  }
+
+  &.bg-stat-cardiovascular {
+  
+    .stat-col-graphic {
+      background-image: url(/wp-content/themes/cytokinetics/assets/images/bg-stat-cardiovascular.png);
+      height: 809px;
+    }
+    
+  }
+
+  &.bg-stat-als {
+  
+    .stat-col-graphic {
+      background-image: url(/wp-content/themes/cytokinetics/assets/images/bg-stat-als.png);
+      height: 658px;
+    }
+    
+  }
+}

@@ -1,0 +1,56 @@
+footer {
+  background-image: url(/wp-content/themes/cytokinetics/assets/images/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 442px;
+  padding: 90px 0;
+  .row-footer {
+    display: flex;
+    justify-content: space-between;
+    .col-logo {
+      padding-right: 25px;
+    }
+  }
+  #menu-footer, #menu-social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #menu-footer {
+    column-count: 3;
+    gap: 40px;
+    li {
+      margin-bottom: 23px; 
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  #menu-social {
+    display: flex;
+    padding-left: 25px;
+    li {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .row-footer {
+      flex-wrap: wrap;
+      flex-direction: column;
+      .col-logo, .col-footer-menu {
+        padding-bottom: 30px;
+      }
+      .col-footer-menu {
+        width: 100%;
+      }
+      #menu-social {
+        padding-left: 0;
+      }
+    }
+  }
+}

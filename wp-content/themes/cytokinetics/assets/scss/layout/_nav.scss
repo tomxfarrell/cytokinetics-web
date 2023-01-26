@@ -1,0 +1,179 @@
+.container-nav {
+   max-width: 1650px;
+   margin: 0 auto;
+}
+
+.social-utility-nav {
+  display: flex;
+  gap: 40px;
+  justify-content: end;
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.06) 63%,rgba(0,0,0,0.06) 100%);
+  padding: 8px 15px;
+  #menu-social, #menu-utility {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #menu-social {
+    display: flex;
+    li {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+  #menu-utility {
+    display: flex;
+    li {
+      &:not(:last-child) {
+        margin-right: 2em;
+      }
+    }
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  @media (max-width: 1215px) {
+    #menu-utility {
+      a {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+.row-main {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1215px) {
+    .col-logo {
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+}
+
+#menu-main {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  .menu-item-has-children >a {
+    display: flex;
+    align-items: center;
+    color: $medium-gray;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    &:after {
+      content: "";
+      background-image: url(/wp-content/themes/cytokinetics/assets/images/icon-chevron-down.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 12px;
+      margin-left: 10px;
+      transition: all .3s ease;
+    }
+  }
+  .menu-item-has-children {
+    &#menu-item-42 {
+      /* careers */
+      .sub-menu {
+        left: -60px;
+      }
+    }
+  }
+  .menu-item {
+    position: relative;
+    &.sub-menu-open {
+      &.menu-item-has-children >a {
+        color: $black;
+        &:after {
+          content: "";
+          background-image: url(/wp-content/themes/cytokinetics/assets/images/icon-chevron-down-hover.svg);
+        }
+      }
+      .sub-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 1s ease;
+        &:before {
+          content: "";
+          height: 5px;
+          width: 100%;
+          background-color: $lime;
+          transform: scaleX(1);
+        }
+        a {
+          color: $black;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          display: block;
+        }
+      }
+    }
+  }
+  .sub-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    min-width: fit-content;
+    transform: translateY(-10px);
+    position: absolute;
+    z-index: 100;
+    background-color: $white;
+    padding: 15px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: all .3s ease .15s;
+    }
+    li {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  li {
+    &:not(:last-child) {
+      margin-right: 2em;
+    }
+  }
+
+  @media (max-width: 1215px) {
+    .menu-item-has-children >a {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    li {
+      &:not(:last-child) {
+        margin-right: 1em; 
+      }
+    }
+  }
+}
+

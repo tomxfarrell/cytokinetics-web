@@ -1,0 +1,10 @@
+.references-block {
+  padding: 74px 0;
+  p, ol {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

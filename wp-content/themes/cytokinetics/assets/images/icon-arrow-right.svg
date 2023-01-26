@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" class="icon-arrow-right">
+  <defs>
+    <style>
+      .circle, .chevron, .cls-4 {
+        fill: none;
+      }
+
+      .circle {
+        stroke: #97d700;
+      }
+
+      .chevron {
+        stroke: #0b3a40;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="arrow-circle" transform="translate(-374 -1343)">
+    <g id="Ellipse_82" data-name="Ellipse 82" class="circle" transform="translate(374 1343)">
+      <circle class="cls-3" cx="14" cy="14" r="14"/>
+      <circle class="cls-4" cx="14" cy="14" r="13.5"/>
+    </g>
+    <path id="Path_3423" data-name="Path 3423" class="chevron" d="M20531.813,1350.151l5.172,5.171-5.172,5.171" transform="translate(-20146.395 1.678)"/>
+  </g>
+</svg>

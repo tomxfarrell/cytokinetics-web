@@ -1,0 +1,85 @@
+.home-hero-block {
+  .container-hero {
+    margin: 0 auto;
+    max-width: 1680px;
+  }
+  #hero-slider {
+    .carousel-indicators {
+      position: relative;
+      left: -150px;
+      bottom: 150px;
+      z-index: 60;
+      width: 480px;
+      // border: 1px solid red;  
+
+      [data-bs-target] {
+        background-color: $white;
+        opacity: 1;
+        width: 50px;
+        &.active {
+          background-color: $lime;
+        }
+      }
+      .carousel-control-next, .carousel-control-prev {
+        border: 0;
+        background-color: transparent;
+      }
+      .carousel-control-prev {
+        .carousel-control-prev-icon {
+          background-image: url(/wp-content/themes/cytokinetics/assets/images/icon-arrow-left-white-green.svg);
+          margin-bottom: -10px;
+        }
+      }
+      .carousel-control-next {
+        .carousel-control-next-icon {
+          background-image: url(/wp-content/themes/cytokinetics/assets/images/icon-arrow-right-white-green.svg);
+          margin-bottom: -10px;
+        }
+      }
+    }
+    
+    .carousel-item {
+      position: relative;
+      // padding-bottom: 20vw;
+      &:after {
+        padding-top: 10vw;
+        display: block;
+        content: "";
+      }
+      video {
+        height: auto;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: fill;
+      }
+      
+  
+      .row-text {
+        // border: 1px solid orange;
+        position: relative;
+        z-index: 10;
+
+        .col-text {
+
+        }
+        .hero-text {
+          // border: 1px solid blue; 
+          text-align: center;
+          padding-bottom: 80px;
+          
+          img {
+            max-width: 100%;
+            padding-right: 15%;
+            height: auto;
+            display: block;
+            margin-bottom: 35px;
+          }
+        }
+      }
+
+      
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.card-content-block {
+  padding-top: 130px;
+  .card {
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid $almost-light-gray;
+    padding: 43px 50px;
+    height: 100%;
+  }
+}

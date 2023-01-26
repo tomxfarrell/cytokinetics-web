@@ -1,0 +1,43 @@
+.image-content-block {
+  margin-top: 80px;
+  &.bg-green-with-wave {
+    background-image: url(/wp-content/themes/cytokinetics/assets/images/bg-green-with-wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    margin-bottom: 100px;
+    padding-top: 194px;
+    width: 100%;
+    min-height: 1055px;
+    // border:1px solid blue;
+    p {
+      color: $white;
+    }
+    
+  }
+  &.bg-white-row {
+    padding-bottom: 230px;
+    .row {
+      background-color: $white;
+      border-radius: 10px;
+      padding: 80px;
+      // border:1px solid red;
+      align-items: flex-start;
+      p {
+        color: $black;
+      }
+    }
+  }
+  .row {
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  &.reverse {
+    .col-left {
+      order: 2;
+    }
+  }
+}
